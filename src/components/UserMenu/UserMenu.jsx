@@ -17,8 +17,7 @@ export const UserMenu = ({ userName, isOnline, points }) => {
 
   const openPopover = () => setIsPopoverVisible(true);
   const closePopover = () => setIsPopoverVisible(false);
-  // const { isPopoverVisible } = this.state;
-  // const { user } = props;
+  
   return (
     <MenuContainer onMouseEnter={openPopover} onMouseLeave={closePopover}>
       <Avatar>
