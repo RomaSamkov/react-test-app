@@ -1,5 +1,5 @@
-import { Component } from 'react';
 import { AppBar } from './AppBar/AppBar';
+import { useState } from 'react';
 
 const user = {
   userName: 'Bob',
@@ -9,26 +9,20 @@ const user = {
     required: 200,
   },
 };
-export class App extends Component {
-  state = {
-    isAppbarOpen: false,
-  };
+export const App = () => {
+  const [isAppbarOpen, setIsAppbarOpen] = useState(false);
 
-  openAppBar = () => this.setState({ isAppbarOpen: true });
-  closeAppBar = () => this.setState({ isAppbarOpen: false });
+  const openAppBar = () => setIsAppbarOpen(true);
+  const closeAppBar = () => setIsAppbarOpen(false);
 
-  render() {
-    const { isAppbarOpen } = this.state;
-
-    return (
-      <div>
-        {!isAppbarOpen && (
-          <button type="button" onClick={this.openAppBar}>
-            Open
-          </button>
-        )}
-        {isAppbarOpen && <AppBar user={user} onClose={this.closeAppBar} />}
-      </div>
-    );
-  }
-}
+  return (
+    <div>
+      {!isAppbarOpen && (
+        <button type="button" onClick={openAppBar}>
+          Open
+        </button>
+      )}
+      {isAppbarOpen && <AppBar user={user} onClose={closeAppBar} />}
+    </div>
+  );
+};
