@@ -1,7 +1,7 @@
 const arr = ['apple', 'mango', 'apple', 'orange', 'mango', 'mango'];
 
 function removeDuplicates(arr) {
-  let unique = arr.reduce(function (acc, curr) {
+  let unique = arr.reduce((acc, curr) => {
     if (!acc.includes(curr)) {
       acc.push(curr);
     }
@@ -19,4 +19,3 @@ export const App = () => {
     </div>
   );
 };
-
