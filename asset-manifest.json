@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/reactProg/static/css/main.795dbe9a.css",
-    "main.js": "/reactProg/static/js/main.57bfd170.js",
-    "static/media/BigFish.woff": "/reactProg/static/media/BigFish.edaa79ee6e7c685a5e80.woff",
-    "static/media/BigFish.woff2": "/reactProg/static/media/BigFish.ba714179cd3929aceb93.woff2",
-    "index.html": "/reactProg/index.html",
-    "main.795dbe9a.css.map": "/reactProg/static/css/main.795dbe9a.css.map",
-    "main.57bfd170.js.map": "/reactProg/static/js/main.57bfd170.js.map"
+    "main.css": "/react-test-app/static/css/main.795dbe9a.css",
+    "main.js": "/react-test-app/static/js/main.c5e973b4.js",
+    "static/media/BigFish.woff": "/react-test-app/static/media/BigFish.edaa79ee6e7c685a5e80.woff",
+    "static/media/BigFish.woff2": "/react-test-app/static/media/BigFish.ba714179cd3929aceb93.woff2",
+    "index.html": "/react-test-app/index.html",
+    "main.795dbe9a.css.map": "/react-test-app/static/css/main.795dbe9a.css.map",
+    "main.c5e973b4.js.map": "/react-test-app/static/js/main.c5e973b4.js.map"
   },
   "entrypoints": [
     "static/css/main.795dbe9a.css",
-    "static/js/main.57bfd170.js"
+    "static/js/main.c5e973b4.js"
   ]
 }
