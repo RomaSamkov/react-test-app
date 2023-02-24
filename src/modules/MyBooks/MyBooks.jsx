@@ -1,11 +1,6 @@
-import { useSelector, useDispatch } from 'react-redux';
-
 import Container from './Container';
 import FormAddBook from './FormAddBook';
 import BookList from './BookList';
-
-import { setFilter } from '../../redux/filter/filter-actions';
-import { getFilter } from '../../redux/filter/filter-selectors';
 
 import styles from './my-books.module.css';
 import {
@@ -21,20 +16,12 @@ const MyBooks = () => {
   // eslint-disable-next-line
   const [removeBook, removeInfo] = useRemoveBookMutation();
 
-  const filter = useSelector(getFilter);
-
-  const dispatch = useDispatch();
-
   const onAddBook = newBook => {
     addBook(newBook).unwrap();
   };
 
   const onRemoveBook = id => {
     removeBook(id).unwrap();
-  };
-
-  const onSetFilter = ({ target }) => {
-    dispatch(setFilter(target.value));
   };
 
   return (
@@ -45,13 +32,6 @@ const MyBooks = () => {
         <FormAddBook onSubmit={onAddBook} />
       </Container>
       <Container title="Список книг">
-        <input
-          onChange={onSetFilter}
-          value={filter}
-          name="filter"
-          type="text"
-          placeholder="Введите название "
-        />
         <BookList books={data} removeBook={onRemoveBook} />
       </Container>
     </div>
