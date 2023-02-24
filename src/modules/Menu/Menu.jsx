@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-import styles from "./menu.module.css";
+import styles from "./menu.module.scss";
 
 import items from "./items";
 
