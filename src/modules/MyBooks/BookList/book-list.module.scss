@@ -1,0 +1,28 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.btn {
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: forestgreen;
+    color: #fff;
+}
+.btn:hover{
+    background-color: red;
+    color: #fff;
+}
+
+.itemText{
+    margin-right: 10px;
+    font-style: italic;
+    text-decoration-line: underline;
+    color: aqua;
+}
+
+
+
