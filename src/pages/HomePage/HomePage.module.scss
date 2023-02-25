@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    color: #fff;
+    margin: 80px;
+}
+
+.link{
+    color: #c02d94;
+    text-decoration:dashed;
+    font-weight: bold;
+    font-size: 36px;
+    font-style: italic;
+    background-color: #7291e7;
+    border-radius: 10px;
+    padding: 5px 30px;
+}
+
+.link:hover{
+    color: #fff;
+}
