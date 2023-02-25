@@ -11,9 +11,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename="/react-test-app/">
         <App />
       </BrowserRouter>
     </Provider>
   </React.StrictMode>
 );
+
+// basename = '/react-test-app/';
