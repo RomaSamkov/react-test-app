@@ -2,7 +2,7 @@ import Container from './Container';
 import FormAddBook from './FormAddBook';
 import BookList from './BookList';
 
-import styles from './my-books.module.css';
+import styles from './my-books.module.scss';
 import {
   useAddBookMutation,
   useGetBooksQuery,
@@ -28,10 +28,10 @@ const MyBooks = () => {
     <div className={styles.books}>
       {isLoading && <p>...Loading Books</p>}
       {isError && <p>...Error load Books</p>}
-      <Container title="Добавить книгу">
+      <Container title="Add Book">
         <FormAddBook onSubmit={onAddBook} />
       </Container>
-      <Container title="Список книг">
+      <Container title="List of books:">
         <BookList books={data} removeBook={onRemoveBook} />
       </Container>
     </div>
