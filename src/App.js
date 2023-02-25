@@ -1,7 +1,7 @@
-import Menu from "./modules/Menu/Menu";
-import UserRoutes from "./UserRoutes";
+import Menu from './modules/Menu/Menu';
+import UserRoutes from './UserRoutes';
 
-import "./shared/styles/style.css";
+import './shared/styles/style.scss';
 
 function App() {
   return (
