@@ -1,6 +1,6 @@
 import useForm from '../../../shared/hooks/useForm';
 
-import styles from './form-add-book.module.css';
+import styles from './form-add-book.module.scss';
 
 import { initialState } from './initialState';
 
@@ -16,7 +16,7 @@ const FormAddBook = ({ onSubmit }) => {
     <form action="" onSubmit={handleSubmit}>
       <div className={styles.group}>
         <label className={styles.label} htmlFor="">
-          Название:
+          Title:
         </label>
         <input
           value={title}
@@ -24,12 +24,12 @@ const FormAddBook = ({ onSubmit }) => {
           onChange={handleChange}
           className={styles.input}
           type="text"
-          placeholder="Название книги"
+          placeholder="Title of book"
         />
       </div>
       <div className={styles.group}>
         <label className={styles.label} htmlFor="">
-          Автор:
+          Author:
         </label>
         <input
           value={author}
@@ -37,12 +37,12 @@ const FormAddBook = ({ onSubmit }) => {
           onChange={handleChange}
           className={styles.input}
           type="text"
-          placeholder="Автор книги"
+          placeholder="Author of book"
         />
       </div>
       <div className={styles.group}>
         <label className={styles.label} htmlFor="">
-          Любимая:
+          Favorite:
         </label>
         <input
           name="favorite"
@@ -52,7 +52,9 @@ const FormAddBook = ({ onSubmit }) => {
         />
       </div>
       <div className={styles.group}>
-        <button type="submit">Добавить</button>
+        <button type="submit" className={styles.btn}>
+          Add Book
+        </button>
       </div>
     </form>
   );
