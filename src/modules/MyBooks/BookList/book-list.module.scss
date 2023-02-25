@@ -1,15 +1,12 @@
 .item {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 15px;
 }
 
 .btn {
-    margin-left: 10px;
     cursor: pointer;
     border: none;
     border-radius: 50%;
-    background-color: forestgreen;
+    background-color: rgb(139, 128, 79);
     color: #fff;
 }
 .btn:hover{
@@ -20,9 +17,14 @@
 .itemText{
     margin-right: 10px;
     font-style: italic;
-    text-decoration-line: underline;
     color: aqua;
 }
 
+.list{
+    list-style: decimal;
+}
 
-
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
