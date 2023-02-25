@@ -1,3 +1,5 @@
+# This is my in-study draft of a book-adding app built with help RTK Query
+
 **Read in other languages: [Русский](README.md), [Polska](README.pl.md).**
 
 # React homework template
