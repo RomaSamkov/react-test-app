@@ -4,8 +4,13 @@ import styles from './HomePage.module.scss';
 const HomePage = () => {
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Welcome Home Page !</h2>
-      <NavLink className={styles.link}>B o o k s</NavLink>
+      <h1 className={styles.title}>Welcome Home Page !</h1>
+      <h2 className={styles.fontFaceText}>
+        This is my student draft while studying RTK Query
+      </h2>
+      <NavLink to="/my-books" className={styles.link}>
+        B o o k s
+      </NavLink>
     </div>
   );
 };
