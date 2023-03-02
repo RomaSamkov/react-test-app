@@ -4,6 +4,21 @@ body {
     background: linear-gradient(90deg, rgba(8, 7, 36, 1) 0%, rgba(76, 76, 221, 1) 33%, rgba(69, 69, 191, 1) 69%, rgba(52, 52, 208, 1) 85%);
 }
 
+@font-face {
+    font-family: "Luckiest Guy";
+    src: url('../../fonts/LuckiestGuy.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "BoyzRGrossShadowNF";
+    src: url('../../fonts/BoyzRGrossShadowNF.ttf');
+}
+
+@font-face {
+    font-family: "ChanticleerRomanNF-bold";
+    src: url('../../fonts/ChanticleerRomanNF-Bold.ttf');
+}
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
