@@ -5,21 +5,26 @@
 }
 
 .title{
+    font-family: 'ChanticleerRomanNF-bold';
+    font-size: 36px;
     color: #fff;
-    margin: 80px;
+    margin: 60px;
 }
 
 .link{
-    color: #c02d94;
-    text-decoration:dashed;
-    font-weight: bold;
-    font-size: 36px;
-    font-style: italic;
-    background-color: #7291e7;
+    text-decoration: none;
+    font-family: 'BoyzRGrossShadowNF';
+    font-size: 46px;
+    color: #fff;
     border-radius: 10px;
     padding: 5px 30px;
 }
 
 .link:hover{
-    color: #fff;
+    text-decoration: underline;
+}
+
+.fontFaceText {
+    font-family: 'ChanticleerRomanNF-bold';
+    font-size: 36px;
 }
